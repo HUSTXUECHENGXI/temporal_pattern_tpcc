@@ -1,0 +1,858 @@
+19:46:00,804 [main] INFO   jTPCC : Term-00, 
+19:46:00,807 [main] INFO   jTPCC : Term-00, +-------------------------------------------------------------+
+19:46:00,807 [main] INFO   jTPCC : Term-00,      BenchmarkSQL v5.0
+19:46:00,807 [main] INFO   jTPCC : Term-00, +-------------------------------------------------------------+
+19:46:00,808 [main] INFO   jTPCC : Term-00,  (c) 2003, Raul Barbosa
+19:46:00,808 [main] INFO   jTPCC : Term-00,  (c) 2004-2016, Denis Lussier
+19:46:00,810 [main] INFO   jTPCC : Term-00,  (c) 2016, Jan Wieck
+19:46:00,810 [main] INFO   jTPCC : Term-00, +-------------------------------------------------------------+
+19:46:00,810 [main] INFO   jTPCC : Term-00, 
+19:46:00,811 [main] INFO   jTPCC : Term-00, db=postgres
+19:46:00,811 [main] INFO   jTPCC : Term-00, driver=org.postgresql.Driver
+19:46:00,811 [main] INFO   jTPCC : Term-00, conn=jdbc:postgresql://localhost:5432/benchmarksql5
+19:46:00,811 [main] INFO   jTPCC : Term-00, user=benchmarksql5
+19:46:00,811 [main] INFO   jTPCC : Term-00, 
+19:46:00,811 [main] INFO   jTPCC : Term-00, warehouses=1
+19:46:00,812 [main] INFO   jTPCC : Term-00, terminals=1
+19:46:00,813 [main] INFO   jTPCC : Term-00, runTxnsPerTerminal=10
+19:46:00,814 [main] INFO   jTPCC : Term-00, limitTxnsPerMin=300
+19:46:00,814 [main] INFO   jTPCC : Term-00, terminalWarehouseFixed=true
+19:46:00,814 [main] INFO   jTPCC : Term-00, 
+19:46:00,814 [main] INFO   jTPCC : Term-00, newOrderWeight=45
+19:46:00,814 [main] INFO   jTPCC : Term-00, paymentWeight=43
+19:46:00,814 [main] INFO   jTPCC : Term-00, orderStatusWeight=4
+19:46:00,815 [main] INFO   jTPCC : Term-00, deliveryWeight=4
+19:46:00,815 [main] INFO   jTPCC : Term-00, stockLevelWeight=4
+19:46:00,815 [main] INFO   jTPCC : Term-00, 
+19:46:00,815 [main] INFO   jTPCC : Term-00, resultDirectory=my_result_%tY-%tm-%td_%tH%tM%tS
+19:46:00,815 [main] INFO   jTPCC : Term-00, osCollectorScript=./misc/os_collector_linux.py
+19:46:00,816 [main] INFO   jTPCC : Term-00, 
+19:46:00,816 [main] TRACE  jTPCC : Term-00, Loading database driver: 'org.postgresql.Driver'...
+19:46:00,830 [main] INFO   jTPCC : Term-00, copied props.pg to my_result_2018-11-04_194600/run.properties
+19:46:00,830 [main] INFO   jTPCC : Term-00, created my_result_2018-11-04_194600/data/runInfo.csv for runID 38
+19:46:00,830 [main] INFO   jTPCC : Term-00, writing per transaction results to my_result_2018-11-04_194600/data/result.csv
+19:46:00,831 [main] INFO   jTPCC : Term-00, osCollectorScript=./misc/os_collector_linux.py
+19:46:00,832 [main] INFO   jTPCC : Term-00, osCollectorInterval=1
+19:46:00,832 [main] INFO   jTPCC : Term-00, osCollectorSSHAddr=null
+19:46:00,832 [main] INFO   jTPCC : Term-00, osCollectorDevices=null
+19:46:00,896 [main] INFO   jTPCC : Term-00,
+19:46:00,970 [main] INFO   jTPCC : Term-00, C value for C_LAST during load: 235
+19:46:00,970 [main] INFO   jTPCC : Term-00, C value for C_LAST this run:    158
+19:46:00,970 [main] INFO   jTPCC : Term-00, 
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Session started!
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Creating 1 terminal(s) with 10 transaction(s) per terminal...
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Terminal Warehouse is fixed
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Transaction Weights: 45% New-Order, 43% Payment, 4% Order-Status, 4% Delivery, 4% Stock-Level
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Number of Terminals	1
+19:46:00,974 [main] TRACE  jTPCC : Term-00, Creating database connection for Term-01...
+19:46:00,981 [main] TRACE  jTPCCTerminal : Term-01, 
+19:46:00,981 [main] TRACE  jTPCCTerminal : Term-01, Terminal 'Term-01' has WarehouseID=1 and DistrictID=8.
+19:46:00,981 [main] TRACE  jTPCC : Term-00, Term-01	1
+19:46:00,981 [main] TRACE  jTPCC : Term-00, Transaction	Weight
+19:46:00,981 [main] TRACE  jTPCC : Term-00, % New-Order	45
+19:46:00,981 [main] TRACE  jTPCC : Term-00, % Payment	43
+19:46:00,981 [main] TRACE  jTPCC : Term-00, % Order-Status	4
+19:46:00,981 [main] TRACE  jTPCC : Term-00, % Delivery	4
+19:46:00,981 [main] TRACE  jTPCC : Term-00, % Stock-Level	4
+19:46:00,982 [main] TRACE  jTPCC : Term-00, Transaction Number	Terminal	Type	Execution Time (ms)		Comment
+19:46:00,982 [main] TRACE  jTPCC : Term-00, Created 1 terminal(s) successfully!
+19:46:00,983 [main] TRACE  jTPCC : Term-00, Starting all terminals...
+19:46:00,983 [main] TRACE  jTPCC : Term-00, All terminals started executing 2018-11-04 19:46:00
+19:46:00,983 [Thread-1] TRACE  jTPCCTerminal : Term-01, Executing 10 transactions...
+19:46:00,986 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:00,986 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:00,987 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:00,987 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:00,987 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:00,988 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:00,989 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date:
+19:46:00,989 [Thread-1] TRACE  jTPCCTData : Customer:    1641  Name:                    Credit:      %Disc:
+19:46:00,989 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:00,989 [Thread-1] TRACE  jTPCCTData : 
+19:46:00,989 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    64397                               3
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    23954                               4
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    47997                               8
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    91537                               7
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    45845                               1
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1    39957                               1
+19:46:00,989 [Thread-1] TRACE  jTPCCTData :      1     1136                               6
+19:46:00,990 [Thread-1] TRACE  jTPCCTData :      1     5489                               5
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : 
+19:46:00,990 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:00,991 [Thread-1] TRACE  jTPCCTData : 
+19:46:00,991 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:00,994 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 5     FOR UPDATE
+19:46:00,996 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 5 AND c_id = 1641
+19:46:00,997 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 5
+19:46:00,999 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3019, 5, 1, 1641, '2018-11-04 19:46:00.997000 -05:00:00', 8, 1)
+19:46:01,000 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3019, 5, 1)
+19:46:01,001 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 1136
+19:46:01,003 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 1136     FOR UPDATE
+19:46:01,004 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 5489
+19:46:01,005 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 5489     FOR UPDATE
+19:46:01,006 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 23954
+19:46:01,006 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 23954     FOR UPDATE
+19:46:01,007 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 39957
+19:46:01,008 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 39957     FOR UPDATE
+19:46:01,009 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 45845
+19:46:01,010 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 45845     FOR UPDATE
+19:46:01,010 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 47997
+19:46:01,011 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 47997     FOR UPDATE
+19:46:01,011 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 64397
+19:46:01,012 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 64397     FOR UPDATE
+19:46:01,012 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 91537
+19:46:01,013 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 91537     FOR UPDATE
+19:46:01,016 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 61, s_ytd = s_ytd + 7,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 91537
+19:46:01,021 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3019, 5, 1, 8, 91537, 1, 7, 122.28999999999999, 'lNj03y9PEGzRwK5YIKrK8hhB')
+19:46:01,021 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:01,039 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:01,039 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:00.991
+19:46:01,039 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:00.991
+19:46:01,039 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:01.038
+19:46:01,039 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,042 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,042 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date: 2018-11-04 19:46:00
+19:46:01,043 [Thread-1] TRACE  jTPCCTData : Customer:    1641  Name: PRIESEPRES         Credit: GC   %Disc: 28.51
+19:46:01,043 [Thread-1] TRACE  jTPCCTData : Order Number:      3019  Number of Lines:  8        W_tax: 13.23   D_tax:  6.71
+19:46:01,043 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,043 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    64397   P89UJrz0QcHhRoC             3     94    G   $ 68.53  $ 205.59
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    23954   n0KZZF2BqcCAuba9nVfLO       4     25    G   $ 84.30  $ 337.20
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    47997   MI5h0XAtY7guqugWj           8     75    G   $ 91.85  $ 734.80
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    91537   M85XbEMkufn7ktnFn4UGyy      7     68    G   $ 17.47  $ 122.29
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    45845   wVLd2VY7DtFt7XKUxqdp        1     57    G   $ 56.51  $  56.51
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1    39957   OmeDYZZYMM3P4S0Ge           1     14    G   $  5.68  $   5.68
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1     1136   XXyKqX0hximXxqo9nddQfbDS    6     74    G   $ 99.68  $ 598.08
+19:46:01,043 [Thread-1] TRACE  jTPCCTData :      1     5489   CdtKsYnfL0TSGT8Rf3XSLk      5     20    G   $ 44.48  $ 222.40
+19:46:01,043 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1957.17
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,044 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,184 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT INPUT ==== Terminal 1,8 ==========================================
+19:46:01,184 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:01,184 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:01,184 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:01,184 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,185 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:01,185 [Thread-1] TRACE  jTPCCTData : Date: 
+19:46:01,185 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,185 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  1
+19:46:01,185 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,185 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : Customer: ____  Cust-Warehouse:      1  Cust-District:  1
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : Name:                       OUGHTCALLYPRI          Since:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData :                                                    Credit:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData :                                                    %Disc:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData :                                                    Phone:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $4427.68        New Cust-Balance:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : Credit Limit:
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,186 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,187 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,187 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:01,189 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_ytd = d_ytd + 4427.68     WHERE d_w_id = 1 AND d_id = 1
+19:46:01,190 [Thread-1] ERROR  jTPCCTData : SELECT d_name, d_street_1, d_street_2, d_city,        d_state, d_zip     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 1
+19:46:01,191 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_warehouse     SET w_ytd = w_ytd + 4427.68     WHERE w_id = 1
+19:46:01,191 [Thread-1] ERROR  jTPCCTData : SELECT w_name, w_street_1, w_street_2, w_city,        w_state, w_zip     FROM bmsql_warehouse     WHERE w_id = 1 
+19:46:01,194 [Thread-1] ERROR  jTPCCTData : SELECT c_id     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 1 AND c_last = 'OUGHTCALLYPRI'     ORDER BY c_first
+19:46:01,195 [Thread-1] ERROR  jTPCCTData : SELECT c_first, c_middle, c_last, c_street_1, c_street_2,        c_city, c_state, c_zip, c_phone, c_since, c_credit,        c_credit_lim, c_discount, c_balance     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 1 AND c_id = 1696     FOR UPDATE
+19:46:01,197 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_customer     SET c_balance = c_balance - 4427.68,         c_ytd_payment = c_ytd_payment + 4427.68,         c_payment_cnt = c_payment_cnt + 1     WHERE c_w_id = 1 AND c_d_id = 1 AND c_id = 1696
+19:46:01,200 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_history (    h_c_id, h_c_d_id, h_c_w_id, h_d_id, h_w_id,     h_date, h_amount, h_data) VALUES (1696, 1, 1, 1, 1, '2018-11-04 19:46:01.187000 -05:00:00', 4427.68, 'AipEAsWo    we3XOC2l')
+19:46:01,205 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT OUTPUT ==== Terminal 1,8 =========================================
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:01.187
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:01.187
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:01.205
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,206 [Thread-1] TRACE  jTPCCTData : w_zip=739711111 d_zip=574811111
+19:46:01,207 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:01,207 [Thread-1] TRACE  jTPCCTData : Date: 2018-11-04 19:46:01
+19:46:01,207 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,207 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  1
+19:46:01,207 [Thread-1] TRACE  jTPCCTData : GaLPS1qqoYXrcexgfQs                       UvDJCKN2it1Qst4     
+19:46:01,207 [Thread-1] TRACE  jTPCCTData : Qo2UrSDr3ADGnwn5Mvn                       dyd9FzULnMmVzcevaK  
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Fjlc8yDZ2kn0OQV2bu   CQ 73971-1111        ChZ35XXy7m           KA 57481-1111
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Customer: 1696  Cust-Warehouse:      1  Cust-District:  1
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Name:   Fcm4CYiGbN3b     OE OUGHTCALLYPRI          Since:  2018-11-04
+19:46:01,208 [Thread-1] TRACE  jTPCCTData :         mKQvicHOzMOJO67ouAGw                       Credit: GC
+19:46:01,208 [Thread-1] TRACE  jTPCCTData :         vuWPNDYscHP                                %Disc:  45.24
+19:46:01,208 [Thread-1] TRACE  jTPCCTData :         Ecl6auilfTn          OY 07021-1111         Phone:  711984-967-111-0011
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $4427.68        New Cust-Balance: $      -8217.32
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Credit Limit:   $     50000.00
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,208 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,209 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,209 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,383 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:01,383 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:01,383 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:01,383 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:01,383 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,384 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,384 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date:
+19:46:01,384 [Thread-1] TRACE  jTPCCTData : Customer:      59  Name:                    Credit:      %Disc:
+19:46:01,384 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:01,384 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,384 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,384 [Thread-1] TRACE  jTPCCTData :      1    40267                               2
+19:46:01,384 [Thread-1] TRACE  jTPCCTData :      1    33429                               5
+19:46:01,384 [Thread-1] TRACE  jTPCCTData :      1    31892                               2
+19:46:01,385 [Thread-1] TRACE  jTPCCTData :      1    44944                               1
+19:46:01,385 [Thread-1] TRACE  jTPCCTData :      1    47957                               8
+19:46:01,385 [Thread-1] TRACE  jTPCCTData :      1    95621                               5
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,385 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,385 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:01,386 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 5     FOR UPDATE
+19:46:01,387 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 5 AND c_id = 59
+19:46:01,388 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 5
+19:46:01,390 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3020, 5, 1, 59, '2018-11-04 19:46:01.389000 -05:00:00', 6, 1)
+19:46:01,390 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3020, 5, 1)
+19:46:01,391 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 31892
+19:46:01,392 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 31892     FOR UPDATE
+19:46:01,392 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 33429
+19:46:01,393 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 33429     FOR UPDATE
+19:46:01,393 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 40267
+19:46:01,394 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 40267     FOR UPDATE
+19:46:01,394 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 44944
+19:46:01,395 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 44944     FOR UPDATE
+19:46:01,395 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 47957
+19:46:01,396 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 47957     FOR UPDATE
+19:46:01,396 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 95621
+19:46:01,396 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 95621     FOR UPDATE
+19:46:01,397 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 33, s_ytd = s_ytd + 5,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 95621
+19:46:01,399 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3020, 5, 1, 6, 95621, 1, 5, 283.05, 'MkabiLMrZPwvDxuf9dcxGrs0')
+19:46:01,399 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:01,407 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:01,407 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:01.386
+19:46:01,407 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:01.386
+19:46:01,407 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:01.406
+19:46:01,407 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,408 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,408 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date: 2018-11-04 19:46:01
+19:46:01,408 [Thread-1] TRACE  jTPCCTData : Customer:      59  Name: BARESEATION        Credit: GC   %Disc: 29.10
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : Order Number:      3020  Number of Lines:  6        W_tax: 13.23   D_tax:  6.71
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    40267   rIE7spJzRDSGh2RyKRN5n3      2     55    G   $ 55.65  $ 111.30
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    33429   snPFJdf0SqrW3Gf1qa          5     12    G   $ 69.07  $ 345.35
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    31892   rp5oVqtwQaK5kjf4MF          2     37    G   $ 26.43  $  52.86
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    44944   Eg2bxMDZ8itc8ZoTyU4         1     91    G   $ 87.40  $  87.40
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    47957   hBo2ljk95CMidJXdJbdS        8     83    G   $ 44.58  $ 356.64
+19:46:01,409 [Thread-1] TRACE  jTPCCTData :      1    95621   exxBTTYoO4KhKxhcVo          5     38    G   $ 56.61  $ 283.05
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,409 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,410 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1051.57
+19:46:01,410 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,410 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,410 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,583 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:01,583 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,584 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  2                       Date:
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : Customer:    2225  Name:                    Credit:      %Disc:
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,584 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    55627                               6
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    15603                               6
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    60501                               9
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    88405                               7
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    39301                               8
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    85361                               1
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    87921                               9
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    99349                               4
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    64916                              10
+19:46:01,585 [Thread-1] TRACE  jTPCCTData :      1    54419                               3
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,585 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:01,586 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 2     FOR UPDATE
+19:46:01,587 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 2 AND c_id = 2225
+19:46:01,588 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 2
+19:46:01,589 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3011, 2, 1, 2225, '2018-11-04 19:46:01.588000 -05:00:00', 10, 1)
+19:46:01,590 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3011, 2, 1)
+19:46:01,590 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 15603
+19:46:01,590 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 15603     FOR UPDATE
+19:46:01,591 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 39301
+19:46:01,591 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 39301     FOR UPDATE
+19:46:01,592 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 54419
+19:46:01,592 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 54419     FOR UPDATE
+19:46:01,592 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 55627
+19:46:01,593 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 55627     FOR UPDATE
+19:46:01,593 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 60501
+19:46:01,594 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 60501     FOR UPDATE
+19:46:01,594 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 64916
+19:46:01,594 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 64916     FOR UPDATE
+19:46:01,595 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 85361
+19:46:01,595 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 85361     FOR UPDATE
+19:46:01,596 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 87921
+19:46:01,596 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 87921     FOR UPDATE
+19:46:01,597 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 88405
+19:46:01,597 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 88405     FOR UPDATE
+19:46:01,597 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 99349
+19:46:01,598 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 99349     FOR UPDATE
+19:46:01,599 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 58, s_ytd = s_ytd + 4,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 99349
+19:46:01,601 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3011, 2, 1, 10, 99349, 1, 4, 123.4, 'T9bMT2n34kZ3ppUzT7un5WCQ')
+19:46:01,601 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:01,608 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:01,608 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:01.585
+19:46:01,608 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:01.585
+19:46:01,608 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:01.608
+19:46:01,608 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,610 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  2                       Date: 2018-11-04 19:46:01
+19:46:01,610 [Thread-1] TRACE  jTPCCTData : Customer:    2225  Name: ATIONCALLYBAR      Credit: BC   %Disc: 42.37
+19:46:01,610 [Thread-1] TRACE  jTPCCTData : Order Number:      3011  Number of Lines: 10        W_tax: 13.23   D_tax:  0.95
+19:46:01,610 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,610 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    55627   Ln8Hb3Vs16CJob693I          6     39    G   $ 23.90  $ 143.40
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    15603   C68k6icYhWEaMTLFkiWnB2a     6     45    G   $ 46.35  $ 278.10
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    60501   xWmeTp4sDumhKV0ykt          9     65    G   $ 22.43  $ 201.87
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    88405   csH6EFhuUj95rd              7     13    G   $ 99.01  $ 693.07
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    39301   DSLEIGDUYV4vBz              8     26    G   $  2.97  $  23.76
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    85361   LfmDFq7qOG4Gm1n8HAsL9B      1     64    G   $ 54.32  $  54.32
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    87921   ej1GtWRZS0YlCMGMNV          9     51    G   $ 37.02  $ 333.18
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    99349   KXy1o1wdtkJseJ              4     62    G   $ 30.85  $ 123.40
+19:46:01,610 [Thread-1] TRACE  jTPCCTData :      1    64916   uPEx7VOy6qriKpeKOcmjyu     10    100    G   $ 91.71  $ 917.10
+19:46:01,611 [Thread-1] TRACE  jTPCCTData :      1    54419   I18oELiAOphLpYdjZ           3     49    G   $  9.97  $  29.91
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1841.21
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,611 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : ==== STOCK_LEVEL INPUT ==== Terminal 1,8 ======================================
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,784 [Thread-1] TRACE  jTPCCTData :                                   Stock-Level
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : Warehouse:      1   District:  8
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : Stock Level Threshold: 19
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : Low Stock:
+19:46:01,784 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,785 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:01,825 [Thread-1] ERROR  jTPCCTData : SELECT count(*) AS low_stock FROM (    SELECT s_w_id, s_i_id, s_quantity         FROM bmsql_stock         WHERE s_w_id = 1 AND s_quantity < 19 AND s_i_id IN (            SELECT ol_i_id                 FROM bmsql_district                 JOIN bmsql_order_line ON ol_w_id = d_w_id                  AND ol_d_id = d_id                  AND ol_o_id >= d_next_o_id - 20                  AND ol_o_id < d_next_o_id                 WHERE d_w_id = 1 AND d_id = 8         )     ) AS L
+19:46:01,826 [Thread-1] ERROR  jTPCCTData : ROLLBACK
+19:46:01,826 [Thread-1] TRACE  jTPCCTData : ==== STOCK_LEVEL OUTPUT ==== Terminal 1,8 =====================================
+19:46:01,826 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:01.785
+19:46:01,826 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:01.785
+19:46:01,826 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:01.826
+19:46:01,826 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,826 [Thread-1] TRACE  jTPCCTData :                                   Stock-Level
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : Warehouse:      1   District:  8
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : Stock Level Threshold: 19
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : Low Stock:  23
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,827 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,828 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,983 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:01,983 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:01,983 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:01,983 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:01,983 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  1                       Date:
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : Customer:     467  Name:                    Credit:      %Disc:
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    63565                               8
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    80783                               2
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    43024                               3
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    33029                               8
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    97615                               4
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    23889                               3
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    29437                               7
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    59151                               5
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    83989                               1
+19:46:01,984 [Thread-1] TRACE  jTPCCTData :      1    94611                               5
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,984 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:01,985 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:01,985 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,985 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:01,985 [Thread-1] TRACE  jTPCCTData : 
+19:46:01,985 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:01,986 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 1     FOR UPDATE
+19:46:01,986 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 1 AND c_id = 467
+19:46:01,987 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 1
+19:46:01,988 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3016, 1, 1, 467, '2018-11-04 19:46:01.987000 -05:00:00', 10, 1)
+19:46:01,989 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3016, 1, 1)
+19:46:01,989 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 23889
+19:46:01,990 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 23889     FOR UPDATE
+19:46:01,990 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 29437
+19:46:01,990 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 29437     FOR UPDATE
+19:46:01,991 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 33029
+19:46:01,991 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 33029     FOR UPDATE
+19:46:01,991 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 43024
+19:46:01,992 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 43024     FOR UPDATE
+19:46:01,992 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 59151
+19:46:01,993 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 59151     FOR UPDATE
+19:46:01,993 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 63565
+19:46:01,993 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 63565     FOR UPDATE
+19:46:01,994 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 80783
+19:46:01,994 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 80783     FOR UPDATE
+19:46:01,995 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 83989
+19:46:01,995 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 83989     FOR UPDATE
+19:46:01,995 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 94611
+19:46:01,996 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 94611     FOR UPDATE
+19:46:01,996 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 97615
+19:46:01,996 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 97615     FOR UPDATE
+19:46:01,998 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 30, s_ytd = s_ytd + 4,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 97615
+19:46:01,999 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3016, 1, 1, 10, 97615, 1, 4, 286.48, 'Xc8ij0DEPDohro6xfYyJcPCp')
+19:46:02,000 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:02,003 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:02,003 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:01.985
+19:46:02,003 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:01.985
+19:46:02,003 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:02.003
+19:46:02,003 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,004 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  1                       Date: 2018-11-04 19:46:01
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : Customer:     467  Name: PRESANTIANTI       Credit: GC   %Disc:  9.16
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : Order Number:      3016  Number of Lines: 10        W_tax: 13.23   D_tax:  8.39
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    63565   Ij1ZWXflKU1TCUMP            8     39    G   $ 34.21  $ 273.68
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    80783   qJvXyBSjq1g6AagPhYaGMv      2     52    G   $ 57.20  $ 114.40
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    43024   weCzAB1YKyF6XPn9LQ          3     66    G   $ 32.92  $  98.76
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    33029   jFXmbQi954foZsBhWO2cO       8     39    G   $  3.63  $  29.04
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    97615   FZi5yKdXmspThbAx2VkRM       4     34    G   $ 71.62  $ 286.48
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    23889   FPTs2vKfKKHHeP0bnpHvL5pw    3     82    G   $ 67.75  $ 203.25
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    29437   jF4IsHyEk92HnaJcM           7     73    G   $  3.03  $  21.21
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    59151   MfSkydhpvW6pgOV4K7d         5     71    G   $ 50.45  $ 252.25
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    83989   pF8uTOl7huPLJJSgkDg11D5j    1     36    G   $  6.73  $   6.73
+19:46:02,005 [Thread-1] TRACE  jTPCCTData :      1    94611   YEW6tcrikeUF22qEp1yi6W      5     95    G   $ 54.54  $ 272.70
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1721.82
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,005 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,006 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,184 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  9                       Date:
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : Customer:      11  Name:                    Credit:      %Disc:
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,184 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:02,184 [Thread-1] TRACE  jTPCCTData :      1    72597                              10
+19:46:02,185 [Thread-1] TRACE  jTPCCTData :      1    81168                               8
+19:46:02,185 [Thread-1] TRACE  jTPCCTData :      1    79989                               3
+19:46:02,185 [Thread-1] TRACE  jTPCCTData :      1    23663                               4
+19:46:02,185 [Thread-1] TRACE  jTPCCTData :      1    48521                               9
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,185 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,185 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:02,186 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 9     FOR UPDATE
+19:46:02,187 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 9 AND c_id = 11
+19:46:02,188 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 9
+19:46:02,189 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3021, 9, 1, 11, '2018-11-04 19:46:02.188000 -05:00:00', 5, 1)
+19:46:02,189 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3021, 9, 1)
+19:46:02,190 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 23663
+19:46:02,190 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 23663     FOR UPDATE
+19:46:02,190 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 48521
+19:46:02,191 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 48521     FOR UPDATE
+19:46:02,191 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 72597
+19:46:02,192 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 72597     FOR UPDATE
+19:46:02,192 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 79989
+19:46:02,192 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 79989     FOR UPDATE
+19:46:02,193 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 81168
+19:46:02,193 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 81168     FOR UPDATE
+19:46:02,194 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 89, s_ytd = s_ytd + 8,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 81168
+19:46:02,195 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3021, 9, 1, 5, 81168, 1, 8, 417.76, 'IlFKBm09zZj1XF0idTdaab3F')
+19:46:02,195 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:02,204 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:02,204 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:02.185
+19:46:02,204 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:02.185
+19:46:02,204 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:02.204
+19:46:02,204 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,205 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:02,205 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  9                       Date: 2018-11-04 19:46:02
+19:46:02,205 [Thread-1] TRACE  jTPCCTData : Customer:      11  Name: BAROUGHTBAR        Credit: BC   %Disc: 14.56
+19:46:02,205 [Thread-1] TRACE  jTPCCTData : Order Number:      3021  Number of Lines:  5        W_tax: 13.23   D_tax: 11.44
+19:46:02,205 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,205 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:02,205 [Thread-1] TRACE  jTPCCTData :      1    72597   MliQdf6xrlnBxd3            10     23    G   $ 51.96  $ 519.60
+19:46:02,205 [Thread-1] TRACE  jTPCCTData :      1    81168   GyDDxskDZlzcgOE05x9Wr       8     97    G   $ 52.22  $ 417.76
+19:46:02,205 [Thread-1] TRACE  jTPCCTData :      1    79989   C3cnRaDgbFOrlmnxflt4        3    100    G   $ 85.29  $ 255.87
+19:46:02,205 [Thread-1] TRACE  jTPCCTData :      1    23663   Q7fs9l654TonbsZ9eXD         4     47    G   $ 15.63  $  62.52
+19:46:02,206 [Thread-1] TRACE  jTPCCTData :      1    48521   pQGAKkdhMCfE67              9     41    G   $ 37.54  $ 337.86
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1697.48
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,206 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,383 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER INPUT ==== Terminal 1,8 ========================================
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date:
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : Customer:    1391  Name:                    Credit:      %Disc:
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : Order Number:            Number of Lines:           W_tax:         D_tax:
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,384 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    72975                               6
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    40333                               7
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    71505                               8
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    78228                               4
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    75157                               1
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    80625                               6
+19:46:02,384 [Thread-1] TRACE  jTPCCTData :      1    17813                               7
+19:46:02,385 [Thread-1] TRACE  jTPCCTData :      1    30101                               5
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : ______   ______                              __
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : Execution Status:                                             Total:  $
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,385 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,385 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:02,386 [Thread-1] ERROR  jTPCCTData : SELECT d_tax, d_next_o_id     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 5     FOR UPDATE
+19:46:02,386 [Thread-1] ERROR  jTPCCTData : SELECT c_discount, c_last, c_credit, w_tax     FROM bmsql_customer     JOIN bmsql_warehouse ON (w_id = c_w_id)     WHERE c_w_id = 1 AND c_d_id = 5 AND c_id = 1391
+19:46:02,387 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_next_o_id = d_next_o_id + 1     WHERE d_w_id = 1 AND d_id = 5
+19:46:02,388 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_oorder (    o_id, o_d_id, o_w_id, o_c_id, o_entry_d,     o_ol_cnt, o_all_local) VALUES (3021, 5, 1, 1391, '2018-11-04 19:46:02.387000 -05:00:00', 8, 1)
+19:46:02,388 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_new_order (    no_o_id, no_d_id, no_w_id) VALUES (3021, 5, 1)
+19:46:02,389 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 17813
+19:46:02,389 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 17813     FOR UPDATE
+19:46:02,389 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 30101
+19:46:02,390 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 30101     FOR UPDATE
+19:46:02,390 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 40333
+19:46:02,391 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 40333     FOR UPDATE
+19:46:02,391 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 71505
+19:46:02,391 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 71505     FOR UPDATE
+19:46:02,392 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 72975
+19:46:02,392 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 72975     FOR UPDATE
+19:46:02,392 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 75157
+19:46:02,393 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 75157     FOR UPDATE
+19:46:02,393 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 78228
+19:46:02,394 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 78228     FOR UPDATE
+19:46:02,394 [Thread-1] ERROR  jTPCCTData : SELECT i_price, i_name, i_data     FROM bmsql_item     WHERE i_id = 80625
+19:46:02,394 [Thread-1] ERROR  jTPCCTData : SELECT s_quantity, s_data,        s_dist_01, s_dist_02, s_dist_03, s_dist_04,        s_dist_05, s_dist_06, s_dist_07, s_dist_08,        s_dist_09, s_dist_10     FROM bmsql_stock     WHERE s_w_id = 1 AND s_i_id = 80625     FOR UPDATE
+19:46:02,396 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_stock     SET s_quantity = 52, s_ytd = s_ytd + 6,         s_order_cnt = s_order_cnt + 1,         s_remote_cnt = s_remote_cnt + 0     WHERE s_w_id = 1 AND s_i_id = 80625
+19:46:02,397 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_order_line (    ol_o_id, ol_d_id, ol_w_id, ol_number,     ol_i_id, ol_supply_w_id, ol_quantity,     ol_amount, ol_dist_info) VALUES (3021, 5, 1, 8, 80625, 1, 6, 551.64, 'hGYcAKJ2OHibxjjyIoswkWeU')
+19:46:02,397 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:02,404 [Thread-1] TRACE  jTPCCTData : ==== NEW_ORDER OUTPUT ==== Terminal 1,8 =======================================
+19:46:02,404 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:02.385
+19:46:02,405 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:02.385
+19:46:02,405 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:02.404
+19:46:02,405 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,405 [Thread-1] TRACE  jTPCCTData :                                     New Order
+19:46:02,405 [Thread-1] TRACE  jTPCCTData : Warehouse:      1  District:  5                       Date: 2018-11-04 19:46:02
+19:46:02,405 [Thread-1] TRACE  jTPCCTData : Customer:    1391  Name: ABLEBARABLE        Credit: GC   %Disc: 11.51
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : Order Number:      3021  Number of Lines:  8        W_tax: 13.23   D_tax:  6.71
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : Supp_W   Item_Id  Item Name                  Qty  Stock  B/G  Price    Amount
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    72975   i5Mm0hUydmR2iH67D5eCd       6     39    G   $  5.43  $  32.58
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    40333   HIXbwUWOVRhzT2lw            7     29    G   $ 14.33  $ 100.31
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    71505   FAhG79o4wSUjKXTBf8c         8     78    G   $ 34.83  $ 278.64
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    78228   X3eREYdSFSZFuxyS            4     11    G   $ 41.60  $ 166.40
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    75157   Tg4zTqyoPYjeRHfr0SC5        1     30    G   $ 18.79  $  18.79
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    80625   K0kQk4J0gtMQV5              6     58    G   $ 91.94  $ 551.64
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    17813   ArYRorbkfishjd2H31          7     37    G   $ 48.17  $ 337.19
+19:46:02,406 [Thread-1] TRACE  jTPCCTData :      1    30101   P66Xy8NswqpCHVp6v           5     44    G   $ 35.82  $ 179.10
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : Execution Status: Order placed                                Total:  $ 1766.77
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,406 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT INPUT ==== Terminal 1,8 ==========================================
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,584 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : Date: 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  9
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,584 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : Customer: ____  Cust-Warehouse:      1  Cust-District:  9
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : Name:                       OUGHTANTIPRI           Since:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData :                                                    Credit:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData :                                                    %Disc:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData :                                                    Phone:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $2717.05        New Cust-Balance:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : Credit Limit:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,585 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,585 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:02,586 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_ytd = d_ytd + 2717.05     WHERE d_w_id = 1 AND d_id = 9
+19:46:02,587 [Thread-1] ERROR  jTPCCTData : SELECT d_name, d_street_1, d_street_2, d_city,        d_state, d_zip     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 9
+19:46:02,587 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_warehouse     SET w_ytd = w_ytd + 2717.05     WHERE w_id = 1
+19:46:02,588 [Thread-1] ERROR  jTPCCTData : SELECT w_name, w_street_1, w_street_2, w_city,        w_state, w_zip     FROM bmsql_warehouse     WHERE w_id = 1 
+19:46:02,589 [Thread-1] ERROR  jTPCCTData : SELECT c_id     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 9 AND c_last = 'OUGHTANTIPRI'     ORDER BY c_first
+19:46:02,589 [Thread-1] ERROR  jTPCCTData : SELECT c_first, c_middle, c_last, c_street_1, c_street_2,        c_city, c_state, c_zip, c_phone, c_since, c_credit,        c_credit_lim, c_discount, c_balance     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 9 AND c_id = 164     FOR UPDATE
+19:46:02,590 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_customer     SET c_balance = c_balance - 2717.05,         c_ytd_payment = c_ytd_payment + 2717.05,         c_payment_cnt = c_payment_cnt + 1     WHERE c_w_id = 1 AND c_d_id = 9 AND c_id = 164
+19:46:02,591 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_history (    h_c_id, h_c_d_id, h_c_w_id, h_d_id, h_w_id,     h_date, h_amount, h_data) VALUES (164, 9, 1, 9, 1, '2018-11-04 19:46:02.585000 -05:00:00', 2717.05, 'AipEAsWo    NQoAda')
+19:46:02,596 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:02,596 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT OUTPUT ==== Terminal 1,8 =========================================
+19:46:02,596 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:02.585
+19:46:02,596 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:02.585
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:02.596
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : w_zip=739711111 d_zip=389411111
+19:46:02,597 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Date: 2018-11-04 19:46:02
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  9
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : GaLPS1qqoYXrcexgfQs                       vIMYZKgOfz          
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Qo2UrSDr3ADGnwn5Mvn                       BpQLh0kWeW7gx       
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Fjlc8yDZ2kn0OQV2bu   CQ 73971-1111        LUlkUkcaUc           ZX 38941-1111
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Customer:  164  Cust-Warehouse:      1  Cust-District:  9
+19:46:02,597 [Thread-1] TRACE  jTPCCTData : Name:   brdk5j8eEfW      OE OUGHTANTIPRI           Since:  2018-11-04
+19:46:02,597 [Thread-1] TRACE  jTPCCTData :         uiEQCHIbOL                                 Credit: GC
+19:46:02,598 [Thread-1] TRACE  jTPCCTData :         ehkvB3vQCla8                               %Disc:  13.23
+19:46:02,598 [Thread-1] TRACE  jTPCCTData :         Znfipkz0nxeKcu       VB 59431-1111         Phone:  883391-852-485-6892
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $2717.05        New Cust-Balance: $      -2727.05
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : Credit Limit:   $     50000.00
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,598 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,784 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT INPUT ==== Terminal 1,8 ==========================================
+19:46:02,784 [Thread-1] TRACE  jTPCCTData : ---- Due:   N/A
+19:46:02,784 [Thread-1] TRACE  jTPCCTData : ---- Start: N/A
+19:46:02,784 [Thread-1] TRACE  jTPCCTData : ---- End:   N/A
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,785 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Date: 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  2
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Customer: ____  Cust-Warehouse:      1  Cust-District:  2
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Name:                       PRIESEEING             Since:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData :                                                    Credit:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData :                                                    %Disc:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData :                                                    Phone:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $2833.19        New Cust-Balance:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Credit Limit:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,785 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,786 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,786 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,786 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,786 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,786 [Thread-1] ERROR  jTPCCTerminal : BEGIN
+19:46:02,787 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_district     SET d_ytd = d_ytd + 2833.19     WHERE d_w_id = 1 AND d_id = 2
+19:46:02,787 [Thread-1] ERROR  jTPCCTData : SELECT d_name, d_street_1, d_street_2, d_city,        d_state, d_zip     FROM bmsql_district     WHERE d_w_id = 1 AND d_id = 2
+19:46:02,788 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_warehouse     SET w_ytd = w_ytd + 2833.19     WHERE w_id = 1
+19:46:02,788 [Thread-1] ERROR  jTPCCTData : SELECT w_name, w_street_1, w_street_2, w_city,        w_state, w_zip     FROM bmsql_warehouse     WHERE w_id = 1 
+19:46:02,789 [Thread-1] ERROR  jTPCCTData : SELECT c_id     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 2 AND c_last = 'PRIESEEING'     ORDER BY c_first
+19:46:02,790 [Thread-1] ERROR  jTPCCTData : SELECT c_first, c_middle, c_last, c_street_1, c_street_2,        c_city, c_state, c_zip, c_phone, c_since, c_credit,        c_credit_lim, c_discount, c_balance     FROM bmsql_customer     WHERE c_w_id = 1 AND c_d_id = 2 AND c_id = 360     FOR UPDATE
+19:46:02,791 [Thread-1] ERROR  jTPCCTData : UPDATE bmsql_customer     SET c_balance = c_balance - 2833.19,         c_ytd_payment = c_ytd_payment + 2833.19,         c_payment_cnt = c_payment_cnt + 1     WHERE c_w_id = 1 AND c_d_id = 2 AND c_id = 360
+19:46:02,791 [Thread-1] ERROR  jTPCCTData : INSERT INTO bmsql_history (    h_c_id, h_c_d_id, h_c_w_id, h_d_id, h_w_id,     h_date, h_amount, h_data) VALUES (360, 2, 1, 2, 1, '2018-11-04 19:46:02.786000 -05:00:00', 2833.19, 'AipEAsWo    dWM1Vf7jv')
+19:46:02,796 [Thread-1] ERROR  jTPCCTData : COMMIT
+19:46:02,796 [Thread-1] TRACE  jTPCCTData : ==== PAYMENT OUTPUT ==== Terminal 1,8 =========================================
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : ---- Due:   2018-11-04 19:46:02.786
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : ---- Start: 2018-11-04 19:46:02.786
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : ---- End:   2018-11-04 19:46:02.796
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : w_zip=739711111 d_zip=770911111
+19:46:02,797 [Thread-1] TRACE  jTPCCTData :                                      Payment
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Date: 2018-11-04 19:46:02
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Warehouse:      1                         District:  2
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : GaLPS1qqoYXrcexgfQs                       SptFwMnVEXwRiz1e    
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Qo2UrSDr3ADGnwn5Mvn                       BU6GH0IFGFWz        
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Fjlc8yDZ2kn0OQV2bu   CQ 73971-1111        YBEtRgYbeY           SG 77091-1111
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Customer:  360  Cust-Warehouse:      1  Cust-District:  2
+19:46:02,797 [Thread-1] TRACE  jTPCCTData : Name:   HOaY84aZzQAImPZL OE PRIESEEING             Since:  2018-11-04
+19:46:02,798 [Thread-1] TRACE  jTPCCTData :         K3hROkqvyq7MZ                              Credit: GC
+19:46:02,798 [Thread-1] TRACE  jTPCCTData :         zbTc71Q28imo                               %Disc:  20.98
+19:46:02,798 [Thread-1] TRACE  jTPCCTData :         jZsnWJO0SsF          FZ 42731-1111         Phone:  414805-307-747-8796
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : Amount Paid:          $2833.19        New Cust-Balance: $      -2843.19
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : Credit Limit:   $     50000.00
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : Cust-Data:
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : -------------------------------------------------------------------------------
+19:46:02,798 [Thread-1] TRACE  jTPCCTData : 
+19:46:02,984 [Thread-1] TRACE  jTPCCTerminal : Term-01, 
+19:46:02,984 [Thread-1] TRACE  jTPCCTerminal : Term-01, Closing statement and connection...
+19:46:02,985 [Thread-1] TRACE  jTPCCTerminal : Term-01, 
+19:46:02,985 [Thread-1] TRACE  jTPCCTerminal : Term-01, Terminal 'Term-01' finished after 0 transaction(s).
+19:46:02,985 [Thread-1] TRACE  jTPCC : Term-00, All terminals finished executing 2018-11-04 19:46:02
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, 
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, 
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, Measured tpmC (NewOrders) = 179.73
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, Measured tpmTOTAL = 329.5
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, Session Start     = 2018-11-04 19:46:00
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, Session End       = 2018-11-04 19:46:02
+19:46:02,985 [Thread-1] INFO   jTPCC : Term-00, Transaction Count = 10
+19:46:02,985 [Thread-1] TRACE  jTPCC : Term-00, Session finished!

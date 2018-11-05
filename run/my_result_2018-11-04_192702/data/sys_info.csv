@@ -1,0 +1,2 @@
+run,elapsed,cpu_user,cpu_nice,cpu_system,cpu_idle,cpu_iowait,cpu_irq,cpu_softirq,cpu_steal,cpu_guest,cpu_guest_nice,vm_nr_dirty
+37,1000,0.0195751770096,0.0,0.00333194502291,0.975843398584,0.00124947938359,0.0,0.0,0.0,0.0,0.0,8309
